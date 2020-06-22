@@ -1,10 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
-import store from './store'
+import Vue from "vue";
+import App from "./App.vue";
+import store from "./store";
+import "@fortawesome/fontawesome-free/css/all.css";
+import "@fortawesome/fontawesome-free/js/all.js";
+import VAnimateCss from "v-animate-css";
 
-Vue.config.productionTip = false
+Vue.use(VAnimateCss);
+
+Vue.config.productionTip = true;
 
 new Vue({
   store,
   render: h => h(App)
-}).$mount('#app')
+}).$mount("#app");
